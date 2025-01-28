@@ -33,6 +33,7 @@ export const links = [
   },
 ] as const;
 
+//TODO: edit experiences
 export const experiencesData = [
   {
     title: "Graduated bootcamp",
@@ -60,6 +61,7 @@ export const experiencesData = [
   },
 ] as const;
 
+//TODO: edit projects
 export const projectsData = [
   {
     title: "CorpComment",
@@ -84,6 +86,7 @@ export const projectsData = [
   },
 ] as const;
 
+//TODO: edit skills
 export const skillsData = [
   "HTML",
   "CSS",
