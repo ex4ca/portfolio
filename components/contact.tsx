@@ -2,9 +2,11 @@
 
 import React from 'react'
 import SectionHeading from './sectionHeading'
-import { FaPaperPlane } from 'react-icons/fa'
 import { motion } from 'framer-motion'
 import { useSectionInView } from '@/lib/hooks';
+import { sendEmail } from '@/actions/sendEmail';
+import SubmitButton from './submitButton';
+import toast from 'react-hot-toast';
 
 export default function Contact() {
   const { ref } = useSectionInView("Contact");
@@ -15,7 +17,7 @@ export default function Contact() {
     ref={ref}
     className='mb-20 sm:mb-28 w-[min(100%,38rem)] text-center'
     initial={{
-      opacity: 0
+      opacity: 0 
     }}
     whileInView={{
       opacity: 1
@@ -34,25 +36,34 @@ export default function Contact() {
         href='mailto:eriguru04@gmail.com'  
       >eriguru04@gmail.com</a> or through this form.</p>
 
-      <form className='mt-10 flex flex-col'>
+      <form 
+        className='mt-10 flex flex-col'
+        action={async (formData) => {
+          const {data, error} = await sendEmail(formData);
+          if (error) {
+            toast.error(error);
+            return;
+          }
+          toast.success('Email sent successfully!');
+        }}
+      >
         <input 
-          className='h-14 rounded-lg borderBlack px-4' 
+          className='h-14 rounded-lg borderBlack px-4'
+          name='senderEmail'
           type='email' 
+          required
+          maxLength={500}
           placeholder='Your email'
         />
         <textarea 
           className='h-52 my-3 rounded-lg borderBlack p-4'
+          name='message'
           placeholder='Your message'
+          required
+          maxLength={5000}
         />
-        <button 
-        className='flex items-center justify-center gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-105 hover:scale-105 hover:bg-gray-950 active:scale-105' 
-        type='submit'
-        >
-          Submit <FaPaperPlane className='text-xs opacity-70' />
-        </button>
+        <SubmitButton />
       </form>
-
-
     </motion.section>
   )
 }
