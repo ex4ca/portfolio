@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Erica Gurung | Portfolio",
-  description: "TODO: description",
+  description: "Erica is a university student studying Computing and Software Systems at the University of Melbourne.",
 };
 
 export default function RootLayout({

@@ -2,9 +2,9 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import storyteller from "@/public/storyteller.png";
+import independentBookstore from "@/public/independentBookstore.png";
+import hifive from "@/public/hifive.png";
 
 export const links = [
   {
@@ -33,78 +33,82 @@ export const links = [
   },
 ] as const;
 
-//TODO: edit experiences
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelor of Design - Computing and Software Systems",
+    location: "University of Melbourne, Parkville, VIC",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Through the progression of my course, I have engaged in a diverse curriculum that has shaped my understanding of, and trained me in algorithms, data processing, databases, object oriented software design and development, user interface development, and models of computation. I’m excited to continue for another year, learning more about game design, computer systems, and graphics and interaction.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Jan 2022 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Software Engineer Intern",
+    location: "Xero, Hawthorn, VIC",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "During my internship at Xero, I worked with experienced professionals in a close-knit, full stack team. I engaged in both front-end and back-end development, deployed bug fixes and enhancing accessibility features in production. I also learned and applied the AGILE methodology by facilitating key sprint ceremonies including stand ups, planning, and refinement. While there, I deepened my understanding of production pipelines, Git workflows, synthetic and E2E testing, and user analytics.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Nov 2024 - Feb 2025",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Women in Technology Bootcamp ",
+    location: "Accenture, Melbourne, VIC",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "In this 4-day bootcamp with over 100 women in technology, I collaborated in a diverse team of eight to address the problem statement of leveraging technology to enhance daily living, communication and interaction for people with various disabilities. I played a pivotal role in the conceptualisation and implementation of our solution, an innovative gamification approach to a to-do list, targeted at individuals with mental illness, which earned us a commendable 2nd place finish.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Oct 2024",
+  },
+  {
+    title: "Empower to Employ Program",
+    location: "Bupa, Melbourne, VIC",
+    description:
+      "Over a two month period, I worked closely with university students to create a solution for Bupa’s digital engagement problem. We designed and proposed a solution that involved a two-pronged approach, aimed at providing customers a greater incentive to engage with Bupa’s services, while navigating budget and operational constraints. I designed a high-fidelity Figma model, which together with our pitch, was recognised for its creative and interactive design, achieving a notable 2nd place ranking.",
+    icon: React.createElement(FaReact),
+    date: "Jul 2024",
   },
 ] as const;
 
-//TODO: edit projects
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "StoryTeller",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-    imageUrl: corpcommentImg,
+      "Part of the solution for BuildClub’s problem statement ‘AI for a better world’. An AI-powered web application generates engaging and meaningful stories that revolve around ethical decisions to teach children - our future leaders of the world - qualities such as leadership, generousity, kindness and more.",
+    tags: ["React", "JavaScript", "HTML", "CSS", "OpenAI", "JigsawStack", "DALL-E"],
+    imageUrl: storyteller,
   },
   {
-    title: "rmtDev",
+    title: "HiFive",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
-    imageUrl: rmtdevImg,
+      "Scoring a perfect score, this project is a digital rendition of the popular card game ‘HiFive’. It utilises Object Oriented Programming principles and popular design patterns, such as the Strategy and Composite pattern, to implement complex game logic for 4 different types of players.",
+    tags: ["Java", "Object Oriented Programming", "Design Patterns", "UML"],
+    imageUrl: hifive,
   },
   {
-    title: "Word Analytics",
+    title: "The Independent Bookstore",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-    imageUrl: wordanalyticsImg,
+      "The Independent Bookstore is a small business specialising in the sale of books from independent Australian writers. This redesigned website is my submission for the final assessment in ‘User Interface Development’, utilising the fundamentals of user interface design and the Gestalt design techniques.",
+    tags: ["HTML", "CSS", "JavaScript", "Adobe XD"],
+    imageUrl: independentBookstore,
   },
 ] as const;
 
-//TODO: edit skills
 export const skillsData = [
+  "Python",
+  "C",
+  "Java",
+  "Javascript",
+  "TypeScript",
+  "Kotlin",
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
+  "SQL",
   "React",
-  "Next.js",
-  "Node.js",
+  "Adobe Cloud",
+  "Object Oriented Programming",
+  "AWS",
   "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
+  "Next.js",
+  "Figma",
   "Framer Motion",
+  "UML"
 ] as const;
