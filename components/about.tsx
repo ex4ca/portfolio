@@ -25,7 +25,7 @@ export default function About() {
         Naturally, this passion led me to seek <span className="italic">greater challenges</span> at university, and after some trial and error, I found my <span className="font-bold">perfect match</span>: <span className="underline">Computer Science</span>. Within my studies, I’ve worked on exciting and stimulating projects utilising <span className="font-bold italic">object oriented programming</span>, and <span className="font-bold italic">user interface design</span>. Beyond the classroom, I’ve ventured to many hackathons and challenges, tackling modern day problems with innovative and <span className="underline">award winning solutions</span>!
         </p>
         <p>
-        <span className="italic">In my spare time</span>, I enjoy playing video games with my friends, reading exciting fantasy novels and doing arts and crafts with my little brother. I’ve currently playing <span className="italic">The Last of Us II</span>, and I’ve just finished reading <span className="italic">If You Could See the Sun</span> by Ann Liang.
+        <span className="italic">In my spare time</span>, I enjoy playing video games with my friends, reading exciting fantasy novels and doing arts and crafts with my little brother. I’m currently playing <span className="italic">The Last of Us II</span>, and I’ve just finished reading <span className="italic">If You Could See the Sun</span> by Ann Liang.
         </p>
     </motion.section>
   );
