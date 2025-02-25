@@ -6,7 +6,6 @@ import idImg from "@/public/id.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { CiMail } from "react-icons/ci";
-import { HiDownload } from "react-icons/hi";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
@@ -67,13 +66,6 @@ export default function Intro() {
         >
           Contact me <CiMail />
         </Link>
-        <a
-          className="bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 active:scale-105 transition"
-          href="/CV.pdf"
-          download
-        >
-          Download CV <HiDownload />
-        </a>
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 rounded-full outline-none focus:scale-105 hover:scale-105 hover:text-gray-950 active:scale-105 transition"
           href="https://www.linkedin.com/in/erica-gurung-5608b3268/"
